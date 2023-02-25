@@ -1,0 +1,45 @@
+:root{
+    background-color: rgb(26, 25, 25); 
+    color: rgb(226, 226, 226);
+}
+
+* {
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    font-size: 4rem;
+    margin: 0.5rem;
+    color: rgb(114, 236, 103);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    color: rgb(26, 25, 25);
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(rgb(114, 236, 103), rgb(15, 148, 33));
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* ADD MEDIA QUERIES */
