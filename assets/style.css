@@ -11,17 +11,23 @@
 h1 {
     font-family: 'VT323', monospace;
     font-size: 4rem;
-    margin: 0.5rem;
-    color: rgb(114, 236, 103);
+    margin: 2rem;
+    color: rgb(136, 255, 125);
 }
 
-.flex-column {
+.start-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     text-align: center;
     margin: 2rem;
+    height: 100vh;
+}
+
+.directions {
+    margin: 0.5rem 2rem 2rem 2rem;
+    width: 70%;
 }
 
 .btn {
@@ -30,9 +36,9 @@ h1 {
     color: rgb(26, 25, 25);
     font-size: 2rem;
     font-weight: 700;
-    background: linear-gradient(rgb(114, 236, 103), rgb(15, 148, 33));
+    background: linear-gradient(rgb(136, 255, 125), rgb(47, 99, 44));
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     width: 8rem;
     border-radius: 10px;
 }
