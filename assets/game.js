@@ -2,11 +2,11 @@
 
 // select points and time remaining in score-display
 
+// timer starts
+
 // create question array with question/choices/answer
 
 //start function to play
-
-// timer starts
 
 //event listener for click
 
