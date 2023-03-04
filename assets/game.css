@@ -9,7 +9,7 @@
 .score-display-item {
     margin: 2rem 0 1rem 0;
     text-align: center;
-    color: rgb(135, 253, 237);
+    color: rgb(255, 239, 99);
     font-family: 'VT323', monospace;
 }
 
@@ -35,7 +35,7 @@
 
 .choice-box {
     display: flex;
-    background: linear-gradient(rgb(136, 255, 125), rgb(47, 99, 44));
+    background: linear-gradient(rgb(255, 239, 99), rgb(185, 174, 72));
     color: (26, 25, 25); 
     border-radius: 10px;
     width: 30%;
