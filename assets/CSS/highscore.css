@@ -63,12 +63,26 @@
 }
 
 /* high scores */
-
-#high-score-list {
+#high-scores {
+    height: 100vh;
     padding: 0.25rem;
     margin-top: 2rem;
     display: block;
     text-align: center;
+}
+
+#high-score-list-title {
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    color: var(--jsYellow);
+    padding: 2rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+}
+
+#high-score-list {
+    min-height: 15rem;
 }
 
 .play-again-btn {
