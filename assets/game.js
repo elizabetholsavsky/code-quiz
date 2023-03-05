@@ -36,7 +36,7 @@ function countdown() {
         timeText.textContent = secondsLeft;
         if (secondsLeft === 0) {
             clearInterval(timeLeft);
-            window.location.href = "./end.html";
+            gameOver();
         }
     }, 1000);
 }
@@ -54,6 +54,10 @@ var btnD = document.getElementById("btnD");
 // score variables
 var scoreText = document.getElementById("score");
 var correctAnswers = 1;
+
+//page container/game over variables
+var scoreDisplay = document.getElementById("score-display");
+var choiceContainer = document.getElementById("choice-container");
 
 function askQuestion() {
     questionText.textContent = questions[questionsIndex].question;
@@ -78,7 +82,6 @@ function checkAnswer(answer) {
     if (questions[questionsIndex].answer === questions[questionsIndex].choices[answer]) {
         scoreText.textContent = correctAnswers;
         correctAnswers++; 
-        // console.log(correctAnswers);
     } else {
         secondsLeft = secondsLeft - 10;
     }
@@ -90,8 +93,14 @@ function nextQuestion() {
     questionsIndex++; 
     askQuestion();
     } else {
-    window.location="./end.html";
+    gameOver();
     }
+}
+
+function gameOver() {
+   scoreDisplay.style.display = "none";
+   questionText.style.display = "none";
+   choiceContainer.style.display = "none";
 }
 
 window.onload = function() {

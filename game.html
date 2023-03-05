@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/game.css">
+    <link rel="stylesheet" href="./assets/CSS/reset.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="./assets/CSS/game.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=VT323&display=swap"
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="score-display">
         <div class="score-display">
 
             <div class="score-display-item">
@@ -46,7 +46,7 @@
             <p id="questionText"> </p>
         </div>
 
-        <div id="choiceDiv">
+        <div id="choice-container">
             
             <div class="choice-box" id="btnA">
                 <p class="choice-letter">A.</p>
@@ -66,6 +66,17 @@
             <div class="choice-box" id="btnD">
                 <p class="choice-letter">D.</p>
                 <p class="choice-text"> </p>
+            </div>
+
+        </div>
+
+        <div id="game-over">
+
+            <div>
+                <p>SCORE</p>
+                <p> </p>
+
+                
             </div>
 
         </div>
