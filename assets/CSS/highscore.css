@@ -75,7 +75,7 @@
     font-family: 'VT323', monospace;
     font-size: 3rem;
     color: var(--jsYellow);
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     margin-top: 2rem;
     display: block;
     text-align: center;
