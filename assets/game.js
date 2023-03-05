@@ -41,17 +41,17 @@ function countdown() {
     }, 1000);
 }
 
-//question
+//question variables
 var questionText = document.getElementById("questionText");
 var questionsIndex = 0;
 
-//choices
+//choice variables
 var btnA = document.getElementById("btnA");
 var btnB = document.getElementById("btnB");
 var btnC = document.getElementById("btnC");
 var btnD = document.getElementById("btnD");
 
-// scores
+// score variables
 var scoreText = document.getElementById("score");
 var correctAnswers = 1;
 
@@ -63,7 +63,7 @@ function askQuestion() {
     btnD.textContent = questions[questionsIndex].choices[3];
 }
 
-// event listeners/functions
+// event listeners/functions for user choices
 btnA.addEventListener("click", checkA);
 btnB.addEventListener("click", checkB);
 btnC.addEventListener("click", checkC);
@@ -75,7 +75,6 @@ function checkC() {checkAnswer(2);}
 function checkD() {checkAnswer(3);}
 
 function checkAnswer(answer) {
-    
     if (questions[questionsIndex].answer === questions[questionsIndex].choices[answer]) {
         scoreText.textContent = correctAnswers;
         correctAnswers++; 
