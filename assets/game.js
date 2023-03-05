@@ -97,13 +97,23 @@ function nextQuestion() {
     }
 }
 
+var gameOverDisplay = document.getElementById("game-over")
+var userScoreContainer = document.getElementById("user-score-container");
+var highScoreInput = document.getElementById("high-score-input");
+var highScoreList = document.getElementById("high-score-list");
+
 function gameOver() {
+   gameOverDisplay.style.display = "block"
    scoreDisplay.style.display = "none";
    questionText.style.display = "none";
    choiceContainer.style.display = "none";
 }
 
+var highScores = document.getElementById("high-scores")
+
 window.onload = function() {
+    gameOverDisplay.style.display = "none"
+    highScores.style.display = "none"
     countdown();
     askQuestion();
 }

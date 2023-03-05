@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/CSS/reset.css">
     <link rel="stylesheet" href="./assets/CSS/style.css">
     <link rel="stylesheet" href="./assets/CSS/game.css">
+    <link rel="stylesheet" href="./assets/CSS/highscore.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=VT323&display=swap"
@@ -16,6 +17,9 @@
 </head>
 
 <body>
+    <!-- game display -->
+
+    <!-- score and timer display -->
     <header id="score-display">
         <div class="score-display">
 
@@ -40,6 +44,7 @@
         </div>
     </header>
 
+    <!-- question display -->
     <div class="question-container">
 
         <div>
@@ -47,7 +52,7 @@
         </div>
 
         <div id="choice-container">
-            
+
             <div class="choice-box" id="btnA">
                 <p class="choice-letter">A.</p>
                 <p class="choice-text"> </p>
@@ -69,17 +74,41 @@
             </div>
 
         </div>
+    </div>
 
-        <div id="game-over">
+        <!-- game over and high score screen -->
+    <div id="game-over">
 
-            <div>
-                <p>SCORE</p>
-                <p> </p>
-
-                
+            <!-- last game score -->
+            <div id="user-score-container">
+                <p id="user-score-title">FINAL SCORE</p>
+                <p id="user-score"> 0 </p>
             </div>
 
-        </div>
+            <div id="input-container">
+                <!-- input to record high score -->
+                <id="high-score-input">
+                    <form>
+                        <label id="name-label"> Enter Name </label>
+                        <br>
+                        <input type="text" id="name-input">
+                        <input type="submit" id="submit-button">
+                    </form>
+            </div>
+
+    </div>
+
+    <div id="high-scores">
+        
+            <!-- list of previous high scores (display after input) -->
+            <div id="high-score-list">
+                <p> HIGH SCORES</p>
+            </div>
+
+            <!-- play again button -->
+            <div>
+                <a href="./game.html" class="play-again-btn">PLAY AGAIN</a>
+            </div>
 
     </div>
 
