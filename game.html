@@ -18,97 +18,110 @@
 
 <body>
     <!-- game display -->
+    <div id="game">
 
-    <!-- score and timer display -->
-    <header id="score-display">
-        <div class="score-display">
+        <!-- score and timer display -->
+        <header id="score-display">
 
-            <div class="score-display-item">
-                <p class="score-display-title">
-                    SCORE
-                </p>
+            <div class="score-display">
 
-                <p id="score">
-                </p>
+                <div class="score-display-item">
+                    <p class="score-display-title">
+                        SCORE
+                    </p>
+
+                    <p id="score">
+                    </p>
+                </div>
+
+                <div class="score-display-item">
+                    <p class="score-display-title">
+                        TIMER
+                    </p>
+
+                    <p id="timeLeft">
+                    </p>
+                </div>
+
             </div>
 
-            <div class="score-display-item">
-                <p class="score-display-title">
-                    TIMER
-                </p>
+        </header>
 
-                <p id="timeLeft">
-                </p>
+        <!-- question display -->
+        <div class="question-container">
+
+            <div>
+                <p id="questionText"> </p>
+            </div>
+
+            <div id="choice-container">
+
+                <div class="choice-box" id="btnA">
+                    <p class="choice-letter">A.</p>
+                    <p class="choice-text"> </p>
+                </div>
+
+                <div class="choice-box" id="btnB">
+                    <p class="choice-letter">B.</p>
+                    <p class="choice-text"> </p>
+                </div>
+
+                <div class="choice-box" id="btnC">
+                    <p class="choice-letter">C.</p>
+                    <p class="choice-text"> </p>
+                </div>
+
+                <div class="choice-box" id="btnD">
+                    <p class="choice-letter">D.</p>
+                    <p class="choice-text"> </p>
+                </div>
+
             </div>
 
         </div>
-    </header>
 
-    <!-- question display -->
-    <div class="question-container">
-
-        <div>
-            <p id="questionText"> </p>
-        </div>
-
-        <div id="choice-container">
-
-            <div class="choice-box" id="btnA">
-                <p class="choice-letter">A.</p>
-                <p class="choice-text"> </p>
-            </div>
-
-            <div class="choice-box" id="btnB">
-                <p class="choice-letter">B.</p>
-                <p class="choice-text"> </p>
-            </div>
-
-            <div class="choice-box" id="btnC">
-                <p class="choice-letter">C.</p>
-                <p class="choice-text"> </p>
-            </div>
-
-            <div class="choice-box" id="btnD">
-                <p class="choice-letter">D.</p>
-                <p class="choice-text"> </p>
-            </div>
-
-        </div>
     </div>
 
-        <!-- game over and high score screen -->
+    <!-- GAME OVER -->
     <div id="game-over">
 
-            <!-- last game score -->
-            <div id="user-score-container">
-                <p id="user-score-title">FINAL SCORE</p>
-                <p id="user-score"> 0 </p>
-            </div>
+        <!-- last game score -->
+        <div id="user-score-container">
+            <p id="user-score-title">FINAL SCORE</p>
+            <p id="user-score"> 0 </p>
+        </div>
 
-            <div id="input-container">
-                <!-- input to record high score -->
-                <id="high-score-input">
-                    <form>
-                        <label id="name-label"> Enter Name </label>
-                        <br>
-                        <input type="text" id="name-input">
-                        <input type="submit" id="submit-button">
-                    </form>
-            </div>
+        <div id="input-container">
+            <!-- input to record high score -->
+            <id="high-score-input">
+                <form>
+                    <label id="name-label"> Enter Name </label>
+                    <br>
+                    <input type="text" id="name-input">
+                    <input type="submit" id="submit-button">
+                </form>
+        </div>
 
     </div>
 
+    <!-- HIGH SCORES -->
     <div id="high-scores">
-        
-            <!-- list of previous high scores (display after input) -->
-            <div id="high-score-list">
-                <p> HIGH SCORES</p>
-            </div>
 
-            <!-- play again button -->
-            <div>
-                <a href="./game.html" class="play-again-btn">PLAY AGAIN</a>
-            </div>
+        <!-- list of previous high scores (display after input) -->
+        <div id="high-score-list-title">
+            <p> HIGH SCORES</p>
+        </div>
+
+        <div id="high-score-list">
+            <ul>
+                <!-- append new high scores here -->
+            </ul>
+        </div>
+
+        <!-- play again button -->
+        <div>
+            <a href="./game.html" class="play-again-btn">PLAY AGAIN</a>
+        </div>
 
     </div>
 

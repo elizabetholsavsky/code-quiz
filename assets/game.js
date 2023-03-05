@@ -1,3 +1,5 @@
+// GAME DISPLAY
+
 //questions array, correct when choices index = answer
 const questions = [
     {
@@ -97,6 +99,8 @@ function nextQuestion() {
     }
 }
 
+// GAME OVER 
+
 var gameOverDisplay = document.getElementById("game-over")
 var userScoreContainer = document.getElementById("user-score-container");
 var highScoreInput = document.getElementById("high-score-input");
@@ -109,11 +113,24 @@ function gameOver() {
    choiceContainer.style.display = "none";
 }
 
-var highScores = document.getElementById("high-scores")
+// HIGH SCORES
 
+var highScoresDisplay = document.getElementById("high-scores")
+function showHighScores() {
+    gameOverDisplay.style.display = "none"
+    highScoresDisplay.style.display = "block"
+}
+
+var submitBtn = document.getElementById("submit-button");
+submitBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    showHighScores();
+});
+
+// ON LOAD START GAME
 window.onload = function() {
     gameOverDisplay.style.display = "none"
-    highScores.style.display = "none"
+    highScoresDisplay.style.display = "none"
     countdown();
     askQuestion();
 }
