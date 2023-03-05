@@ -1,4 +1,4 @@
-//questions array
+//questions array, correct when choices index = answer
 const questions = [
     {
         question: "Which of the following is NOT a primitive data type?",
@@ -36,7 +36,7 @@ function countdown() {
         timeText.textContent = secondsLeft;
         if (secondsLeft === 0) {
             clearInterval(timeLeft);
-            // game over
+            window.location.href = "./end.html";
         }
     }, 1000);
 }
@@ -44,22 +44,16 @@ function countdown() {
 //question
 var questionText = document.getElementById("questionText");
 var questionsIndex = 0;
-currentQuestion = questions[questionsIndex];
 
 //choices
-var choiceDiv = document.getElementById("choiceDiv")
-var choiceBox = document.getElementsByClassName("choice-box");
-var choiceText = document.getElementsByClassName("choice-text");
 var btnA = document.getElementById("btnA");
 var btnB = document.getElementById("btnB");
 var btnC = document.getElementById("btnC");
 var btnD = document.getElementById("btnD");
 
-//scores
+// scores
 var scoreText = document.getElementById("score");
-let answersCorrect = 0;
-scoreText.textContent = answersCorrect;
-
+var correctAnswers = 1;
 
 function askQuestion() {
     questionText.textContent = questions[questionsIndex].question;
@@ -81,13 +75,14 @@ function checkC() {checkAnswer(2);}
 function checkD() {checkAnswer(3);}
 
 function checkAnswer(answer) {
-    if (questions[questionsIndex].answer == questions[questionsIndex].choices[answer]) {
-        answersCorrect++; 
-        console.log(answersCorrect);
+    
+    if (questions[questionsIndex].answer === questions[questionsIndex].choices[answer]) {
+        scoreText.textContent = correctAnswers;
+        correctAnswers++; 
+        // console.log(correctAnswers);
     } else {
         secondsLeft = secondsLeft - 10;
     }
-
     nextQuestion();
 }
 
@@ -96,12 +91,11 @@ function nextQuestion() {
     questionsIndex++; 
     askQuestion();
     } else {
-    window.location.href = "./end.html";
+    window.location="./end.html";
     }
 }
 
 window.onload = function() {
     countdown();
     askQuestion();
-    checkAnswer();
 }
