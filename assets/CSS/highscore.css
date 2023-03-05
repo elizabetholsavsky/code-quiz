@@ -1,0 +1,85 @@
+:root{
+    --jsYellow: rgb(255, 239, 99);
+}
+
+/* GAME OVER SCREEN */
+
+/* user score */
+
+#user-score-container {
+    padding: 0.25rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+}
+
+#user-score-title {
+    font-family: 'VT323', monospace;
+    font-size: 3rem;
+    color: var(--jsYellow);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+#user-score {
+    color: white;
+    font-size: 3rem;
+    padding: 0.5rem;
+}
+
+/* submit name */
+
+#input-container {
+    padding: 0.25rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+   }
+
+#name-label {
+    color: var(--jsYellow);
+    padding: 0.5rem;
+}
+
+#name-input {
+    width: 10rem;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 1rem;
+
+}
+
+#submit-button {
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    color: rgb(26, 25, 25);
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(rgb(255, 239, 99), rgb(185, 174, 72));
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 8rem;
+    border-radius: 10px;
+}
+
+/* high scores */
+
+#high-score-list {
+    padding: 0.25rem;
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.play-again-btn {
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    color: rgb(26, 25, 25);
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(rgb(255, 239, 99), rgb(185, 174, 72));
+    padding: 0.5rem;
+    margin: 2rem;
+    width: 8rem;
+    border-radius: 10px;
+}

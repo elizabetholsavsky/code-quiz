@@ -1,6 +1,7 @@
 :root{
     background-color: rgb(26, 25, 25); 
     color: rgb(226, 226, 226);
+    --jsYellow: rgb(255, 239, 99);
 }
 
 * {
@@ -8,11 +9,13 @@
     font-size: 1.5rem;
 }
 
+/* start screen styles */
+
 h1 {
     font-family: 'VT323', monospace;
     font-size: 4rem;
     margin: 2rem;
-    color: rgb(255, 239, 99);
+    color: var(--jsYellow);
 }
 
 .start-container {
@@ -30,7 +33,7 @@ h1 {
     width: 70%;
 }
 
-.btn {
+.start-btn {
     text-decoration: none;
     font-family: 'VT323', monospace;
     color: rgb(26, 25, 25);

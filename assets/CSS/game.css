@@ -1,15 +1,22 @@
+:root{
+    --jsYellow: rgb(255, 239, 99);
+}
+
+/* score and timer display */
+
 .score-display {
     display: flex;
     justify-content: space-between; 
     text-align: center;
     width: 50%;
     margin: auto;
+    min-height: 7rem;
 }
 
 .score-display-item {
     margin: 2rem 0 1rem 0;
     text-align: center;
-    color: rgb(255, 239, 99);
+    color: var(--jsYellow);
     font-family: 'VT323', monospace;
 }
 
@@ -17,6 +24,8 @@
     font-family: 'VT323', monospace;
     font-size: 2rem;
 }
+
+/* question display */
 
 .question-container {
     display: flex;
@@ -31,8 +40,9 @@
 }
 
 #questionText {
-    margin: 2rem;
+    margin: 2rem 0 2rem 0;
     color:  rgb(226, 226, 226);
+    min-height: 3rem;
 }
 
 .choice-box {
@@ -43,7 +53,7 @@
     width: 30%;
     min-width: 20rem;
     padding: 0.5rem;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .choice-box:hover {
