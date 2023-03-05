@@ -1,3 +1,4 @@
+//questions array
 const questions = [
     {
         question: "Which of the following is NOT a primitive data type?",
@@ -26,7 +27,7 @@ const questions = [
     },
 ]
 
-// countdown timer, game ends on 0
+// countdown game timer
 var secondsLeft = 75 
 function countdown() {
     var timeText = document.getElementById("timeLeft");
@@ -40,30 +41,67 @@ function countdown() {
     }, 1000);
 }
 
-// ask question
+//question
 var questionText = document.getElementById("questionText");
+var questionsIndex = 0;
+currentQuestion = questions[questionsIndex];
+
+//choices
+var choiceDiv = document.getElementById("choiceDiv")
+var choiceBox = document.getElementsByClassName("choice-box");
+var choiceText = document.getElementsByClassName("choice-text");
 var btnA = document.getElementById("btnA");
 var btnB = document.getElementById("btnB");
 var btnC = document.getElementById("btnC");
 var btnD = document.getElementById("btnD");
-var choiceText = document.getElementsByClassName("choice-text");
-var score = document.getElementById("score");
-questionIndex = 0;
-score = 0;
+
+//scores
+var scoreText = document.getElementById("score");
+let answersCorrect = 0;
+scoreText.textContent = answersCorrect;
+
 
 function askQuestion() {
-    questionText.textContent = questions[questionIndex].question;
-    btnA.textContent = questions[questionIndex].choices[0];
-    btnB.textContent = questions[questionIndex].choices[1];
-    btnC.textContent = questions[questionIndex].choices[2];
-    btnD.textContent = questions[questionIndex].choices[3];
+    questionText.textContent = questions[questionsIndex].question;
+    btnA.textContent = questions[questionsIndex].choices[0];
+    btnB.textContent = questions[questionsIndex].choices[1];
+    btnC.textContent = questions[questionsIndex].choices[2];
+    btnD.textContent = questions[questionsIndex].choices[3];
 }
 
-// check question, points
+// event listeners/functions
+btnA.addEventListener("click", checkA);
+btnB.addEventListener("click", checkB);
+btnC.addEventListener("click", checkC);
+btnD.addEventListener("click", checkD);
 
-window.onload = function () {
+function checkA() {checkAnswer(0);}
+function checkB() {checkAnswer(1);}
+function checkC() {checkAnswer(2);}
+function checkD() {checkAnswer(3);}
+
+function checkAnswer(answer) {
+    if (questions[questionsIndex].answer == questions[questionsIndex].choices[answer]) {
+        answersCorrect++; 
+        console.log(answersCorrect);
+    } else {
+        secondsLeft = secondsLeft - 10;
+    }
+
+    nextQuestion();
+}
+
+function nextQuestion() {
+    if (questionsIndex < 4) {
+    questionsIndex++; 
+    askQuestion();
+    } else {
+    window.location.href = "./end.html";
+    }
+}
+
+window.onload = function() {
     countdown();
     askQuestion();
-    // check question
-    // gameover
+    checkAnswer();
 }
