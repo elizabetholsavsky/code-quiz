@@ -1,5 +1,4 @@
 // GAME DISPLAY
-
 //questions array, correct when choices index = answer
 const questions = [
     {
@@ -55,7 +54,7 @@ var btnD = document.getElementById("btnD");
 
 // score variables
 var scoreText = document.getElementById("score");
-var correctAnswers = 1;
+var correctAnswers = 0;
 
 //page container/game over variables
 var scoreDisplay = document.getElementById("score-display");
@@ -80,6 +79,7 @@ function checkB() {checkAnswer(1);}
 function checkC() {checkAnswer(2);}
 function checkD() {checkAnswer(3);}
 
+// check answers and go to next question
 function checkAnswer(answer) {
     if (questions[questionsIndex].answer === questions[questionsIndex].choices[answer]) {
         scoreText.textContent = correctAnswers;
@@ -100,32 +100,62 @@ function nextQuestion() {
 }
 
 // GAME OVER 
-
 var gameOverDisplay = document.getElementById("game-over")
 var userScoreContainer = document.getElementById("user-score-container");
 var highScoreInput = document.getElementById("high-score-input");
 var highScoreList = document.getElementById("high-score-list");
+var endScore = document.getElementById("end-score");
 
 function gameOver() {
    gameOverDisplay.style.display = "block"
    scoreDisplay.style.display = "none";
    questionText.style.display = "none";
    choiceContainer.style.display = "none";
+
+   endScore.textContent = correctAnswers;
 }
 
-// HIGH SCORES
+// submit button
 
-var highScoresDisplay = document.getElementById("high-scores")
-function showHighScores() {
-    gameOverDisplay.style.display = "none"
-    highScoresDisplay.style.display = "block"
+var nameInput = document.getElementById("name-input");
+function enterName(event) {
+    if (nameInput.value === "") {
+        alert("Enter your name");
+        event.preventDefault();
+        return;
+    }
 }
 
 var submitBtn = document.getElementById("submit-button");
 submitBtn.addEventListener("click", function(event) {
     event.preventDefault();
+    enterName();
+    saveLastScore();
     showHighScores();
 });
+
+// HIGH SCORES
+
+// push to local storage
+
+var userScoreIndex;
+
+function saveLastScore() {   
+    var userScore = {
+    name: nameInput.value,
+    score: endScore.textContent
+    }; 
+    localStorage.setItem("userScore", JSON.stringify(userScore));
+    // console.log(userScore)
+}
+
+// show high score list
+var highScoresDisplay = document.getElementById("high-scores");
+
+function showHighScores() {
+    gameOverDisplay.style.display = "none"
+    highScoresDisplay.style.display = "block"
+}
 
 // ON LOAD START GAME
 window.onload = function() {
