@@ -71,17 +71,28 @@
 
 /* MEDIA QUERIES */
 
-/* Tablets */
-@media screen and (max-width: 992px) {
-
-}
-
-/* Large Phones */
-@media screen and (max-width: 768px) {
-
-}
-
-/* Small Phones */
-@media screen and (max-width: 576px) {
-
+/* Phones */
+@media screen and (max-width: 535px) {
+    .score-display {
+        display: flex;
+        justify-content: space-around;
+        min-height: 6rem;
+    }
+    .choice-box {
+        width: 12%;
+        min-width: 12rem;
+    }
+    .choice-box {
+        font-size: 1.5rem;
+    }
+    #score-display, .score-display-title, .score-display-item, #questionText {
+        margin: 0.5rem;
+    }
+    #questionText, #choice-container {
+        text-align: center;
+    }
+    .question-container {
+        width: 95%;
+        margin: 0.5rem;
+    }
 }
