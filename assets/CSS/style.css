@@ -1,3 +1,5 @@
+/* START SCREEN DISPLAY */
+
 :root{
     background-color: rgb(26, 25, 25); 
     color: rgb(226, 226, 226);
@@ -51,4 +53,24 @@ h1 {
     transform: scale(1.1);
 }
 
-/* ADD MEDIA QUERIES */
+/* MEDIA QUERIES */
+
+/* Small Phones */
+@media screen and (max-width: 390px) {
+    .start-container {
+        margin: 1rem;
+    }
+    .directions {
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h1, .directions {
+        margin: 0.5rem
+    }
+    .start-btn {
+        width: 6rem;
+        font-size: 2rem;
+    }
+}
