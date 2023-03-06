@@ -1,3 +1,5 @@
+/* GAME DISPLAY */
+
 :root{
     --jsYellow: rgb(255, 239, 99);
 }
@@ -65,4 +67,21 @@
     margin-right: 0.5rem;
     font-weight: 700;
     color: rgb(26, 25, 25);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Large Phones */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Small Phones */
+@media screen and (max-width: 576px) {
+
 }

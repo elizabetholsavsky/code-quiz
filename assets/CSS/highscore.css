@@ -1,3 +1,5 @@
+/* GAME OVER AND SCORES DISPLAY */
+
 :root{
     --jsYellow: rgb(255, 239, 99);
 }
@@ -111,4 +113,21 @@ th {
     text-align: center;
     padding: 0.5rem;
     color: var(--jsYellow);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Large Phones */
+@media screen and (max-width: 768px) {
+
+}
+
+/* Small Phones */
+@media screen and (max-width: 576px) {
+
 }
