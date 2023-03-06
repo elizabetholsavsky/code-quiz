@@ -30,7 +30,7 @@ const questions = [
 ]
 
 // countdown game timer
-var secondsLeft = 20 
+var secondsLeft = 90 
 function countdown() {
     var timeText = document.getElementById("timeLeft");
     var timeLeft = setInterval(function () {
