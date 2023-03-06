@@ -108,7 +108,7 @@ var endScore = document.getElementById("end-score");
 var finalPage = document.getElementById("high-scores")
 
 function showInitials() {
-    gameOverDisplay.style.display = "block"
+   gameOverDisplay.style.display = "block"
    scoreDisplay.style.display = "none";
    questionText.style.display = "none";
    choiceContainer.style.display = "none";
@@ -149,8 +149,6 @@ submitBtn.addEventListener("click", function(event) {
 
 // push to local storage
 
-var userScoreIndex;
-
 function saveLastScore() {   
     let localStorageData = JSON.parse(localStorage.getItem('userScore'))
     var userScore = {
@@ -173,12 +171,11 @@ var highScoresDisplay = document.getElementById("high-scores");
 function showHighScores() {
     gameOverDisplay.style.display = "none"
     highScoresDisplay.style.display = "block"
-    // let localStorageData = JSON.parse(localStorage.getItem('userScore'))
     let localStorageData = JSON.parse(localStorage.getItem('userScore')).reverse()
     let table = document.createElement('table')
     let thead = document.createElement('thead')
     let th1 = document.createElement('th')
-    th1.innerHTML = 'Name'
+    th1.innerHTML = 'Initials'
     let th2 = document.createElement('th')
     th2.innerHTML = 'Score'
     thead.append(th1, th2)
