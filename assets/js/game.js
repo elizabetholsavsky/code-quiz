@@ -30,7 +30,7 @@ const questions = [
 ]
 
 // countdown game timer
-var secondsLeft = 90 
+var secondsLeft = 60 
 function countdown() {
     var timeText = document.getElementById("timeLeft");
     var timeLeft = setInterval(function () {
@@ -131,7 +131,7 @@ function gameOver() {
 var nameInput = document.getElementById("name-input");
 function enterName(event) {
     if (nameInput.value === "") {
-        alert("Enter your name");
+        alert("Enter your initials!");
         event.preventDefault();
         return;
     }
