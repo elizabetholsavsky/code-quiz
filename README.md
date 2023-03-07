@@ -5,12 +5,10 @@
 This multiple-choice review game tests users' knowledge of basic JavaScript concepts.
 
 The game is reponsive and can be played on computer, tablet, or phone.
-![1start-screen](https://user-images.githubusercontent.com/116515976/223320441-1468f48a-e595-4ff3-8021-64149c6b4be9.png)
-![2game-display](https://user-images.githubusercontent.com/116515976/223320443-07167541-7aee-45e5-8bee-42bcad3aa632.png)
-![3input-initials](https://user-images.githubusercontent.com/116515976/223320447-d1732016-0a90-4c2d-9e1f-ff9ecff323ae.png)
-![4recent-scores](https://user-images.githubusercontent.com/116515976/223320449-12a258ff-b146-4ac4-82e6-08a6061e1bdd.png)
 
-#Installation
+![code-quiz-screenshots](https://user-images.githubusercontent.com/116515976/223322739-8899b3b0-4cef-42a3-8fb7-9eda80e8c5b1.png)
+
+## Installation
 
 NA
 
