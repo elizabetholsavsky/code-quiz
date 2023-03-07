@@ -4,7 +4,7 @@
     --jsYellow: rgb(255, 239, 99);
 }
 
-/* score and timer display */
+/* score and timer */
 
 .score-display {
     display: flex;
@@ -27,7 +27,7 @@
     font-size: 2rem;
 }
 
-/* question display */
+/* questions */
 
 .question-container {
     display: flex;

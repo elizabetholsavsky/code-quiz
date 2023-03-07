@@ -4,7 +4,7 @@
     --jsYellow: rgb(255, 239, 99);
 }
 
-/* GAME OVER SCREEN */
+/* GAME OVER DISPLAY */
 
 /* user score */
 
@@ -62,7 +62,7 @@
     border-radius: 10px;
 }
 
-/* high scores */
+/* recent scores */
 
 #high-scores {
     height: 100vh;
@@ -117,7 +117,7 @@ th {
 
 /* MEDIA QUERIES */
 
-/* Small Phones */
+/* Phones */
 @media screen and (max-width: 500px) {
 h2 {
     margin: 0;
