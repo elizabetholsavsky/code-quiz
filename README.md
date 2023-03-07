@@ -4,6 +4,8 @@
 
 This multiple-choice review game tests users' knowledge of basic JavaScript concepts.
 
+The game is reponsive and can be played on computer, tablet, or phone.
+
 #Installation
 
 NA
@@ -11,7 +13,6 @@ NA
 ## Usage
 
 Game URL:
-
 
 Click on the link above to go to the start page. Directions read:
 
