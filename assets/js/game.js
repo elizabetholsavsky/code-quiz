@@ -207,6 +207,7 @@ function showHighScores() {
 }
 
 // ON LOAD START GAME
+
 window.onload = function() {
     gameOverDisplay.style.display = "none";
     highScoresDisplay.style.display = "none";

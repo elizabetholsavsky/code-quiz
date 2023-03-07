@@ -1,6 +1,6 @@
 ## Code Quiz
 
-#Description
+## Description
 
 This multiple-choice review game tests users' knowledge of basic JavaScript concepts.
 
@@ -8,7 +8,7 @@ This multiple-choice review game tests users' knowledge of basic JavaScript conc
 
 NA
 
-#Usage
+## Usage
 
 Game URL:
 
@@ -29,11 +29,11 @@ When the game is over, you are shown your final score and asked to type your ini
 
 After clicking the "submit" button, the recent scores from local storage are displayed in the table. You have the option to play again by clicking the "play again" button.
 
-#Credits
+## Credits
 
 NA
 
-#License
+## License
 
 MIT License
 

@@ -11,8 +11,6 @@
     font-size: 1.5rem;
 }
 
-/* start screen styles */
-
 h1 {
     font-family: 'VT323', monospace;
     font-size: 4rem;
@@ -55,7 +53,7 @@ h1 {
 
 /* MEDIA QUERIES */
 
-/* Small Phones */
+/* Phones */
 @media screen and (max-width: 390px) {
     .start-container {
         margin: 1rem;
