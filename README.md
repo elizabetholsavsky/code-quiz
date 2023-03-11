@@ -4,7 +4,7 @@
 
 This multiple-choice review game tests users' knowledge of basic JavaScript concepts.
 
-The game is reponsive and can be played on computer, tablet, or phone.
+The game is responsive and can be played on computer, tablet, or phone.
 
 ![code-quiz-screenshots](https://user-images.githubusercontent.com/116515976/223322739-8899b3b0-4cef-42a3-8fb7-9eda80e8c5b1.png)
 
