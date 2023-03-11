@@ -8,10 +8,6 @@ The game is responsive and can be played on computer, tablet, or phone.
 
 ![code-quiz-screenshots](https://user-images.githubusercontent.com/116515976/223322739-8899b3b0-4cef-42a3-8fb7-9eda80e8c5b1.png)
 
-## Installation
-
-NA
-
 ## Usage
 
 Game URL:
@@ -32,10 +28,6 @@ The game ends once all questions are answered or the clock reaches "0".
 When the game is over, you are shown your final score and asked to type your initials into the input field. If you try to submit a blank form, than you will be alerted to enter your initials.
 
 After clicking the "submit" button, the recent scores from local storage are displayed in the table. You have the option to play again by clicking the "play again" button.
-
-## Credits
-
-NA
 
 ## License
 
