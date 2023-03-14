@@ -58,11 +58,6 @@
     margin: 1rem;
 }
 
-.choice-box:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
 .choice-text {
     margin-right: 0.5rem;
     font-weight: 700;
@@ -72,6 +67,13 @@
 /* MEDIA QUERIES */
 
 /* Phones */
+@media screen and (min-width: 535px) {
+    .choice-box:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    }
+}
+
 @media screen and (max-width: 535px) {
     .score-display {
         display: flex;
@@ -95,5 +97,8 @@
     .question-container {
         width: 95%;
         margin: 0.5rem;
+    }
+    .choice-box:hover {
+    cursor: pointer;
     }
 }
