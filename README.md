@@ -8,6 +8,10 @@ The game is responsive and can be played on computer, tablet, or phone.
 
 ![code-quiz-screenshots](https://user-images.githubusercontent.com/116515976/223322739-8899b3b0-4cef-42a3-8fb7-9eda80e8c5b1.png)
 
+* [Usage](#usage)
+* [License](#license)
+* [Contact](#contact)
+
 ## Usage
 
 Game URL:
@@ -31,3 +35,10 @@ After clicking the "submit" button, the recent scores from local storage are dis
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT)
+
+## Contact
+* Email elizabetholsavsky@gmail.com
+* LinkedIn [https://www.linkedin.com/in/elizabetholsavsky/](https://www.linkedin.com/in/elizabetholsavsky/)
+* Portfolio [https://elizabetholsavsky.com/](https://elizabetholsavsky.com/)
+* Hashnode [https://elizabetholsavsky.hashnode.dev/](https://elizabetholsavsky.hashnode.dev/)
+* Twitter [@elizavsky](https://twitter.com/home)
