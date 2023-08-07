@@ -1,4 +1,5 @@
 ## Code Quiz
+https://elizabetholsavsky.github.io/code-quiz/
 
 ## Description
 
@@ -15,10 +16,7 @@ Table of Contents
 
 ## Usage
 
-Game URL:
-https://elizabetholsavsky.github.io/code-quiz/
-
-Click on the link above to go to the start page. Directions read:
+Click on the [link](https://elizabetholsavsky.github.io/code-quiz/) to go to the start page. Directions read:
 
 "Put your JavaScript knowledge to the test. Time is limited but choose carefully... Wrong answers will deduct time from the clock!"
 
