@@ -1,5 +1,9 @@
-## Code Quiz
-https://elizabetholsavsky.github.io/code-quiz/
+<div align="center">
+  
+  ## Code Quiz
+  https://elizabetholsavsky.github.io/code-quiz/
+
+</div>
 
 ## Description
 
